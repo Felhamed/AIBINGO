@@ -43,91 +43,28 @@
         <div id="speed">??</div>
         <div id="units">---</div>
       </div>
-
-
     </div>
-
-
       -->
-      <div class="container">
+      <div class="container center-block hideOverflow">
+
+      <nav class="navbar navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <span class="glyphicon glyphicon-leaf"></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
       <div class="row">
         <div class="col-sm-4 text-center">Human State<canvas id="donut"></canvas></div>
         <div class="col-sm-4 text-center">Machine State<canvas id="donut2"></canvas></div>
         <div class="col-sm-4 text-center">Preferences<canvas id="donut3"></canvas></div>
       </div>
       </div>
-<script>
-var ctx = document.getElementById("donut");
-var myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      datasets: [{
-      backgroundColor: [
-        "#2ecc71",
-        "#e74c3c"
-      ],
-      data: [75, 25]
-    }]
-  },
-  options: {
-    cutoutPercentage: 80,
-    rotation: 1*Math.PI,
-    circumference: 1*Math.PI
-  }
-});
-</script>
-<script>
-var ctx = document.getElementById("donut2");
-var myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      datasets: [{
-        data: [50, 50],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(75, 192, 192, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255,99,132,1)',
-          'rgba(75, 192, 192, 1)'
-        ],
-        borderWidth: 1
-    }]
-  },
-  options: {
-    cutoutPercentage: 80,
-    rotation: 1*Math.PI,
-    circumference: 1*Math.PI
-  }
-});
-</script>
-<script>
-var ctx = document.getElementById("donut3");
-var myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      datasets: [{
-      backgroundColor: [
-        "#2ecc71",
-        "#e74c3c"
-      ],
-      data: [30, 70]
-    }]
-  },
-  options: {
-    cutoutPercentage: 80,
-    rotation: 1*Math.PI,
-    circumference: 1*Math.PI
-  }
-});
-</script>
-    </div>
 
-
-
-<div class="container">
-  <!-- Content here -->
-
+<div class="row text-center hideOverflow">
 <nav aria-label="...">
   <ul class="pagination  pagination-lg">
     
@@ -145,7 +82,7 @@ var myChart = new Chart(ctx, {
     
   </ul>
 </nav>
-
+</div>
 
 </div>
 
