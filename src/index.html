@@ -8,11 +8,13 @@
     <!-- Your custom files -->
     <link rel="stylesheet" href="css/app.css" type="text/css">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Chart JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
     <script src="GMLIB/system.js"></script>
     <script src="GMLIB/info.js"></script>
@@ -28,56 +30,90 @@
     <!-- <script src="GMLIB/voice.js"></script> -->
   </head>
   <body>
-    <div id="wrapper">
+      <!--
+      <div id="wrapper">
       <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
       <h1>speed</h1>
       <div class="instruments">
         <div id="speed">??</div>
         <div id="units">---</div>
       </div>
-      <canvas id="myChart" width="400" height="400"></canvas>
+      -->
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-4 text-center">Human State<canvas id="donut"></canvas></div>
+        <div class="col-sm-4 text-center">Machine State<canvas id="donut2"></canvas></div>
+        <div class="col-sm-4 text-center">Preferences<canvas id="donut3"></canvas></div>
+      </div>
+      </div>
 <script>
-var ctx = document.getElementById("myChart");
+var ctx = document.getElementById("donut");
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'doughnut',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-    }
+      datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#e74c3c"
+      ],
+      data: [75, 25]
+    }]
+  },
+  options: {
+    cutoutPercentage: 80,
+    rotation: 1*Math.PI,
+    circumference: 1*Math.PI
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("donut2");
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [50, 50],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(75, 192, 192, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255,99,132,1)',
+          'rgba(75, 192, 192, 1)'
+        ],
+        borderWidth: 1
+    }]
+  },
+  options: {
+    cutoutPercentage: 80,
+    rotation: 1*Math.PI,
+    circumference: 1*Math.PI
+  }
+});
+</script>
+<script>
+var ctx = document.getElementById("donut3");
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#e74c3c"
+      ],
+      data: [30, 70]
+    }]
+  },
+  options: {
+    cutoutPercentage: 80,
+    rotation: 1*Math.PI,
+    circumference: 1*Math.PI
+  }
 });
 </script>
     </div>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Your app code: -->
     <script src="js/app.js"></script>
