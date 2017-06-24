@@ -1,0 +1,14 @@
+{
+  "name":"AIBINGO",
+  "id":"97460379",
+  "template": "Blank",
+  "version": "0.0.1",
+  "src": "src",
+  "dist": "dist",
+  "main": "index.html",
+  "icon": "Icon.png",
+  "developer": "Firas",
+  "category": "General",
+  "type": "RemoteHigh",
+  "description": "Generated on 6/24/2017, 11:20:21 AM by ngi-sdk version "
+}
