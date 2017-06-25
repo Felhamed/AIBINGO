@@ -52,7 +52,7 @@ var myChart3 = new Chart(ctx3, {
   options: {
     cutoutPercentage: 80,
     rotation: 1*Math.PI,
-    circumference: 1*Math.PI
+    circumference: 1*Math.PI 
   }
 });
 
