@@ -23,7 +23,7 @@
 }
 
 .glyphicon-big {
-    font-size: 9.2em;
+    font-size: 6.2em;
     color: #C0C0C0;
 }
 #speed {
@@ -39,7 +39,9 @@
     width:100%;
     display:block;
 }
-
+.glyphicon.glyphicon-user-big {
+    font-size: 80px;
+}
 
 .glyphicon.glyphicon-chevron-left {
     font-size: 40px;
