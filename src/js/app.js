@@ -17,6 +17,8 @@ var myChart1 = new Chart(ctx1, {
   options: {
     cutoutPercentage: 80,
     rotation: 1*Math.PI,
+    tooltips: {enabled: false},
+    hover: {mode: null},
     circumference: 1*Math.PI
   }
 });
@@ -41,6 +43,8 @@ var myChart2 = new Chart(ctx2, {
   options: {
     cutoutPercentage: 80,
     rotation: 1*Math.PI,
+    tooltips: {enabled: false},
+    hover: {mode: null},
     circumference: 1*Math.PI
   }
 });
@@ -64,6 +68,8 @@ var myChart3 = new Chart(ctx3, {
   options: {
     cutoutPercentage: 80,
     rotation: 1*Math.PI,
+    tooltips: {enabled: false},
+    hover: {mode: null},
     circumference: 1*Math.PI 
   }
 });
