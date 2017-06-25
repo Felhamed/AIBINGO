@@ -38,7 +38,7 @@
     <script src="GMLIB/util.js"></script>
     <script src="GMLIB/voice.js"></script>
   </head>
-  <body style="overflow:hidden">
+  <body>
       <!--
       <div id="wrapper">
       <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
@@ -49,19 +49,28 @@
       </div>
     </div>
       -->
-      <div class="container center-block hideOverflow">
+	<div class="container center-block hideOverflow">
 
-      <nav class="navbar navbar-static-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="./index.html">
-        <span class="glyphicon glyphicon-home"></span>
-      </a>
-    </div>
+	<nav class="navbar navbar-static-top">
+	<div class="container-fluid">
+	<div class="text-center">
+	  <a class="quick-btn" href="index.html">
+		<i class="glyphicon glyphicon-th-large"></i>
+		<span class="spane">Home</span> 
+	  </a> 
+	  <a class="quick-btn" href="human.html">
+		<i class="glyphicon glyphicon-heart"></i>
+		<span class="spane">Driver State</span> 
+	  </a> 
+	  <a class="quick-btn" href="habbit.html">
+		<i class="glyphicon glyphicon-refresh"></i>
+		<span class="spane" class="spane">Driving Habit</span> 
+	  </a>
+	</div>
   </div>
-</nav>
+	</nav>
 	<!-- First Row, no offset -->
-	  <div class="row" style="margin-top: 6%; font-size: 25px;">
+	  <div class="row" style="margin-top: 1%; font-size: 25px;">
         <b><font color = #C0C0C0>
         <div class="col-sm-4 text-center">Brake Fluid</div>
         <div class="col-sm-4 text-center">Battery Level</div>
@@ -91,7 +100,7 @@
 	  </div>
 	  <div class="col-sm-4 text-center">
 		<b><font color = #C0C0C0> 
-        <input type="text" value="33" class="dial" data-width="150" data-fgColor="#ff6600" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
+        <input type="text" value="33" class="dial" data-width="150" data-fgColor="#ff0000" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
 		<script>
 			$(function() {
 				$(".dial").knob();
@@ -121,7 +130,7 @@
 	  </div>
 	  <div class="col-sm-4 text-center">
 		<b><font color = #C0C0C0> 
-        <input type="text" value="44" class="dial" data-width="150" data-fgColor="#ccff33" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
+        <input type="text" value="44" class="dial" data-width="150" data-fgColor="#33cc33" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
 		<script>
 			$(function() {
 				$(".dial").knob();
