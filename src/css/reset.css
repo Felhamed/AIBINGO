@@ -277,6 +277,7 @@ optgroup {
   font-weight: bold;
 }
 
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -320,6 +321,14 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
+}
+
+/** progress bar options --kosalan--
+*/
+.progressopt {
+  height: 50px;
+  font-size: 40px;
+  margin-bottom: 0px
 }
 
 /**
