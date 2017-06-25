@@ -65,3 +65,29 @@
         width: 100% !important;
         height: 100% !important;
     }
+
+
+.quick-btn {
+    background: #eee;
+    -webkit-box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
+    box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
+    color: #444;
+    display: inline-block;
+    height: 80px;
+    margin: 10px;
+    padding-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+    position: relative;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-center .spane{
+    width: 100%;
+    display: table;
+}

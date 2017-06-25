@@ -11,7 +11,6 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
@@ -49,27 +48,50 @@
 
       <nav class="navbar navbar-static-top">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="./human.html">
-        <span class="glyphicon glyphicon-user"></span>
-      </a>
-    </div>
+  <div class="text-center">
+              <a class="quick-btn" href="#">
+                <i class="glyphicon glyphicon-bell"></i>
+                <span class="spane">default</span> 
+              </a> 
+              <a class="quick-btn" href="#">
+                <i class="glyphicon glyphicon-apple"></i>
+                <span class="spane">danger</span> 
+              </a> 
+              <a class="quick-btn" href="#">
+                <i class="glyphicon glyphicon-phone"></i>
+                <span class="spane">No Label</span> 
+              </a> 
+              <a class="quick-btn" href="#">
+                <i class="glyphicon glyphicon-road"></i>
+                <span class="spane" class="spane">warning</span> 
+              </a>         
+              <a class="quick-btn" href="#">
+                <i class="glyphicon glyphicon-volume-up"></i>
+                <span class="spane">é</span> 
+              </a> 
+              <a class="quick-btn" href="#">
+                <i class="glyphicon glyphicon-signal"></i>
+                <span class="spane">φ</span> 
+              </a> 
+            </div>
+    
   </div>
 </nav>
 
 
      
-      <div class="row" style="margin-top: 6%; font-size: 25px;">
+      <div class="row" style="font-size: 25px;">
         <b><font color = #C0C0C0> 
-        <a href="human.html"><div class="col-sm-4 text-center">Driver Situation</div></a>
-        <div class="col-sm-4 text-center">Driver Habbit</div>
-        <a href="vehicle.html"></a><div class="col-sm-4 text-center">Vehicle Condition</div></a>
+        <a href="human.html" style="color:#C0C0C0"><div class="col-sm-4 text-center">Driver State</div></a>
+        <a href="habbit.html" style="color:#C0C0C0"><div class="col-sm-4 text-center">Driver Habbit</div></a>
+        <a href="vehicle.html" style="color:#C0C0C0"><div class="col-sm-4 text-center">Vehicle Condition</div></a>
         </b></font>
       </div>   
       <div class="row" style="margin-top: -6%; float: right; width: 100%;">
         <b><font color = #C0C0C0> 
         <a href="human.html"><div class="col-sm-4 text-center"><canvas id="donut"></canvas></div></a>
-        <div class="col-sm-4 text-center"><canvas id="donut2"></canvas></div>
+        <a href="habbit.html" style="color:#C0C0C0">
+        <div class="col-sm-4 text-center"><canvas id="donut2"></canvas></div></a>
         <a href="vehicle.html"><div class="col-sm-4 text-center"><canvas id="donut3"></canvas></div></a>
         </b></font>
       </div>
