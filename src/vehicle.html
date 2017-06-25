@@ -27,16 +27,16 @@
 
     <script src="GMLIB/system.js"></script>
     <script src="GMLIB/info.js"></script>
-    <!-- Uncomment libraries as you need them: -->
-    <!-- <script src="GMLIB/comm.js"></script> -->
-    <!-- <script src="GMLIB/io.js"></script> -->
-    <!-- <script src="GMLIB/media.js"></script> -->
-    <!-- <script src="GMLIB/monitor.js"></script> -->
-    <!-- <script src="GMLIB/nav.js"></script> -->
-    <!-- <script src="GMLIB/phone.js"></script> -->
-    <!-- <script src="GMLIB/ui.js"></script> -->
-    <!-- <script src="GMLIB/util.js"></script> -->
-    <!-- <script src="GMLIB/voice.js"></script> -->
+<!--     Uncomment libraries as you need them: -->
+    <script src="GMLIB/comm.js"></script>
+    <script src="GMLIB/io.js"></script>
+    <script src="GMLIB/media.js"></script>
+    <script src="GMLIB/monitor.js"></script>
+    <script src="GMLIB/nav.js"></script>
+    <script src="GMLIB/phone.js"></script>
+    <script src="GMLIB/ui.js"></script>
+    <script src="GMLIB/util.js"></script>
+    <script src="GMLIB/voice.js"></script>
   </head>
   <body style="overflow:hidden">
       <!--
@@ -62,16 +62,16 @@
 </nav>
 	<!-- First Row, no offset -->
 	  <div class="row" style="margin-top: 6%; font-size: 25px;">
-        <b><font color = #C0C0C0> 
-        <div class="col-sm-4 text-center">Brake Pads</div>
-        <div class="col-sm-4 text-center">Tire Pressure</div>
+        <b><font color = #C0C0C0>
+        <div class="col-sm-4 text-center">Brake Fluid</div>
+        <div class="col-sm-4 text-center">Battery Level</div>
         <div class="col-sm-4 text-center">Service Required</div>
         </b></font>
       </div>   
       <div class="row">
 	  <div class="col-sm-4 text-center">
 		<b><font color = #C0C0C0> 
-        <input type="text" value="75" class="dial" data-width="150" data-fgColor="#33cc33" data-skin="tron" data-thickness=".2" data-displayPrevious=true>
+        <input id="brakeFluid" type="text" value="75" class="dial" data-width="150" data-fgColor="#33cc33" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
 		<script>
 			$(function() {
 				$(".dial").knob();
@@ -81,7 +81,7 @@
 	  </div>
 	  <div class="col-sm-4 text-center">
 		<b><font color = #C0C0C0> 
-        <input type="text" value="15" class="dial" data-width="150" data-fgColor="#ff0000" data-skin="tron" data-thickness=".2" data-displayPrevious=true>
+        <input type="text" value="15" class="dial" data-width="150" data-fgColor="#ff0000" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
 		<script>
 			$(function() {
 				$(".dial").knob();
@@ -91,7 +91,7 @@
 	  </div>
 	  <div class="col-sm-4 text-center">
 		<b><font color = #C0C0C0> 
-        <input type="text" value="33" class="dial" data-width="150" data-fgColor="#ff6600" data-skin="tron" data-thickness=".2" data-displayPrevious=true>
+        <input type="text" value="33" class="dial" data-width="150" data-fgColor="#ff6600" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
 		<script>
 			$(function() {
 				$(".dial").knob();
@@ -111,7 +111,7 @@
   <div class="row">
 	  <div class="col-sm-4 col-xs-offset-2 text-center">
 		<b><font color = #C0C0C0> 
-        <input id="brakeFluid" type="text" value="89" class="dial" data-width="150" data-fgColor="#00cc00" data-skin="tron" data-thickness=".2" data-displayPrevious=true>
+        <input type="text" value="89" class="dial" data-width="150" data-fgColor="#00cc00" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
 		<script>
 			$(function() {
 				$(".dial").knob();
@@ -121,7 +121,7 @@
 	  </div>
 	  <div class="col-sm-4 text-center">
 		<b><font color = #C0C0C0> 
-        <input type="text" value="44" class="dial" data-width="150" data-fgColor="#ccff33" data-skin="tron" data-thickness=".2" data-displayPrevious=true>
+        <input type="text" value="44" class="dial" data-width="150" data-fgColor="#ccff33" data-skin="tron" data-thickness=".2" data-displayPrevious=true data-readOnly=true>
 		<script>
 			$(function() {
 				$(".dial").knob();

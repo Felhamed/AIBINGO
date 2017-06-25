@@ -77,16 +77,17 @@ function showSpeed(data) {
   }
 };
 
+gm.info.watchVehicleData(showSpeed, ['average_speed']);
+gm.info.getVehicleData(showSpeed, ['average_speed']); 
+
 function processData(data) {
   console.log(data);
-  var brakeFluidIndicator = data. brake_fluid_ind;
+  var brakeFluidIndicator = data.brake_fluid_ind;
   if (brakeFluidIndicator !== undefined) {
     var brakeFluidIndicatorValue = document.getElementById('brakeFluid');
     brakeFluidIndicator.value = brakeFluidIndicatorValue;
   }
 };
 
-gm.info.watchVehicleData(showSpeed, ['average_speed']);
-gm.info.getVehicleData(showSpeed, ['average_speed']);
-gm.info.getVehicleData(processData, [' brake_fluid_ind']);
+gm.info.getVehicleData(processData, ['brake_fluid_ind']);
 
