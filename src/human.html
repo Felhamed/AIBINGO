@@ -34,7 +34,7 @@
     <!-- <script src="GMLIB/util.js"></script> -->
     <!-- <script src="GMLIB/voice.js"></script> -->
   </head>
-  <body style="overflow: hidden;">
+  <body>
       <!--
       <div id="wrapper">
       <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
@@ -50,54 +50,43 @@
       <nav class="navbar navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="./human.html">
-        <span class="glyphicon glyphicon-user"></span>
+      <a class="navbar-brand" href="./index.html">
+        <span class="glyphicon glyphicon-home"></span>
       </a>
     </div>
   </div>
 </nav>
 
-
-     
-      <div class="row" style="margin-top: 6%; font-size: 25px;">
-        <b><font color = #C0C0C0> 
-        <div class="col-sm-4 text-center">Driver Situation</div>
-        <div class="col-sm-4 text-center">Driver Habbit</div>
-        <div class="col-sm-4 text-center">Vehicle Condition</div>
-        </b></font>
-      </div>   
-      <div class="row" style="margin-top: -6%; float: right; width: 100%;">
-        <b><font color = #C0C0C0> 
-        <div class="col-sm-4 text-center"><canvas id="donut"></canvas></div>
-        <div class="col-sm-4 text-center"><canvas id="donut2"></canvas></div>
-        <div class="col-sm-4 text-center"><canvas id="donut3"></canvas></div>
-        </b></font>
+      <div class="row">
+        <div class="col-sm-4 text-center">PAGE TWO<canvas id="donut"></canvas></div>
+        <div class="col-sm-4 text-center">PAGE TWO<canvas id="donut2"></canvas></div>
+        <div class="col-sm-4 text-center">PAGE TWO<canvas id="donut3"></canvas></div>
+      </div>
       </div>
 
-<div class="navigation-bar row text-center hideOverflow">
-    <ul class="pagination  pagination-lg pull-left"  style="margin: 0; float: none!important">
+<div class="row text-center hideOverflow">
+<nav aria-label="...">
+  <ul class="pagination  pagination-lg">
     
-    <li class="page-item"><span class="page-link">L0</span></li>
-    <li class="page-item"><span class="page-link">L1</span></li>
-    <li class="page-item"><span class="page-link">L2</span></li>
+    <li class="page-item"><a class="page-link" href="#">L0</a></li>
+    <li class="page-item"><a class="page-link" href="#">L1</a></li>
+    <li class="page-item"><a class="page-link" href="#">L2</a></li>
     <li class="page-item active">
       <span class="page-link">
         L3
         <span class="sr-only">(current)</span>
       </span>
     </li>
-    <li class="page-item"><span class="page-link">L4</span></li>
-    <li class="page-item"><span class="page-link">L5</span></li>
-
+    <li class="page-item"><a class="page-link" href="#">L4</a></li>
+    <li class="page-item"><a class="page-link" href="#">L5</a></li>
+    
   </ul>
-
-        <a  href="map.html" onclick="map.html" style="/* margin-left: 10%; */margin-right: 12%;float: right;"><button class="btn btn-lg pull-right" href="map.html" onclick="map.html" style="margin-left: 10px;">START</button></a>
+</nav>
 </div>
 
-
-
 </div>
- 
+
+</div>   
 
     <!-- Your app code: -->
     <script src="js/app.js"></script>

@@ -7,6 +7,10 @@ var myChart1 = new Chart(ctx1, {
         "#2ecc71",
         "#e74c3c"
       ],
+        borderColor: [
+          "#C0C0C0",
+          "#C0C0C0"
+        ],
       data: [75, 25]
     }]
   },
@@ -25,14 +29,13 @@ var myChart2 = new Chart(ctx2, {
       datasets: [{
         data: [50, 50],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(75, 192, 192, 0.2)'
+        "#2ecc71",
+        "#e74c3c"
         ],
         borderColor: [
-          'rgba(255,99,132,1)',
-          'rgba(75, 192, 192, 1)'
-        ],
-        borderWidth: 1
+          "#C0C0C0",
+          "#C0C0C0"
+        ]
     }]
   },
   options: {
@@ -51,13 +54,17 @@ var myChart3 = new Chart(ctx3, {
         "#2ecc71",
         "#e74c3c"
       ],
+        borderColor: [
+          "#C0C0C0",
+          "#C0C0C0"
+        ],
       data: [30, 70]
     }]
   },
   options: {
     cutoutPercentage: 80,
     rotation: 1*Math.PI,
-    circumference: 1*Math.PI
+    circumference: 1*Math.PI 
   }
 });
 
