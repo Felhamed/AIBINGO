@@ -35,3 +35,16 @@
     width:100%;
     display:block;
 }
+
+
+.glyphicon.glyphicon-chevron-left {
+    font-size: 40px;
+}
+.glyphicon.glyphicon-user {
+    font-size: 40px;
+}
+.glyphicon.glyphicon-home{
+    font-size: 40px;
+}
+
+
