@@ -34,7 +34,7 @@
     <!-- <script src="GMLIB/util.js"></script> -->
     <!-- <script src="GMLIB/voice.js"></script> -->
   </head>
-  <body >
+  <body>
       <!--
       <div id="wrapper">
       <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
@@ -50,46 +50,17 @@
       <nav class="navbar navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="./human.html">
-        <span class="glyphicon glyphicon-user"></span>
+      <a class="navbar-brand" href="#">
+        <span class="glyphicon glyphicon-leaf"></span>
       </a>
     </div>
   </div>
 </nav>
 
 
-     
-      <div class="row">
-        <b><font color = #C0C0C0> 
-        <div class="col-sm-4 text-center">Driver Situation<canvas id="donut"></canvas></div>
-        <div class="col-sm-4 text-center">Driver Tendencies<canvas id="donut2"></canvas></div>
-        <div class="col-sm-4 text-center">Vehicle Condition<canvas id="donut3"></canvas></div>
-        </b></font>
-      </div>
 
 <div class="row text-center hideOverflow">
-<nav aria-label="...">
-  <ul class="pagination  pagination-lg">
-    
-    <li class="page-item"><a class="page-link" href="#">L0</a></li>
-    <li class="page-item"><a class="page-link" href="#">L1</a></li>
-    <li class="page-item"><a class="page-link" href="#">L2</a></li>
-    <li class="page-item active">
-      <span class="page-link">
-        L3
-        <span class="sr-only">(current)</span>
-      </span>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">L4</a></li>
-    <li class="page-item"><a class="page-link" href="#">L5</a></li>
-    
-  </ul>
-</nav>
-
-  <ul class="pagination  pagination-lg">
-    <li class="page-item"><a class="page-link" href="map.html">L5</a></li>
-    </ul>
-
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(43.64949050411479,-79.3864727630127),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.64949050411479,-79.3864727630127)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>231 yonge street<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 </div>
 
 </div>
