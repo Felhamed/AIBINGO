@@ -11,7 +11,7 @@ var myChart1 = new Chart(ctx1, {
           "#C0C0C0",
           "#C0C0C0"
         ],
-      data: [75, 25]
+      data: [30, 70]
     }]
   },
   options: {
