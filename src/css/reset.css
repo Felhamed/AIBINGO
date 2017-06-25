@@ -23,6 +23,7 @@ html {
 
 body {
   margin: 0;
+  background-image: url("../images/bg.png")
 }
 
 /* HTML5 display definitions
