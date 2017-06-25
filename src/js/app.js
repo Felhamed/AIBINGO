@@ -27,7 +27,7 @@ var myChart2 = new Chart(ctx2, {
     type: 'doughnut',
     data: {
       datasets: [{
-        data: [50, 50],
+        data: [40, 60],
         backgroundColor: [
         "#2ecc71",
         "#e74c3c"
